@@ -28,6 +28,10 @@ function generateRandomUserAgent() {
 
 app.use(express.json());
 
+app.get("/healthcheck", async (req, res) => {
+  res.status(200).send("Alive!");
+});
+
 app.post("/generateAlt", async (req, res) => {
   const { image } = req.body;
 
