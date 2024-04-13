@@ -1,2 +1,1 @@
-# Backend for ALT text generator
-
+# Alt Text Generator Backend
