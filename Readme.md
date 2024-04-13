@@ -7,3 +7,5 @@ The backend of Altext is built on Express.js and interacts with the [Replicate A
 - `/healthcheck` (GET)
 - `/generateAlt` (POST) 
     - Request body: `{"image":"<image URL>"}`
+
+### [Main Repo](https://github.com/ota0912/altext)
