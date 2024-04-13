@@ -5,7 +5,7 @@ const corsOptions = require('./config/corsOptions')
 require("dotenv").config();
 
 const app = express();
-app.use(cors(corsOptions))
+app.use(cors())
 
 const port = process.env.PORT || 3000;
 
