@@ -1,8 +1,12 @@
 const express = require("express");
 const Replicate = require("replicate");
+const cors = require('cors')
+const corsOptions = require('./config/corsOptions')
 require("dotenv").config();
 
 const app = express();
+app.use(cors(corsOptions))
+
 const port = process.env.PORT || 3000;
 
 const replicate = new Replicate({
