@@ -48,9 +48,9 @@ app.post("/generateAlt", async (req, res) => {
                 input: {
                 image: image,
                 },
-                headers: {
-                "User-Agent": generateRandomUserAgent()
-                },
+                // headers: {
+                // "User-Agent": generateRandomUserAgent()
+                // },
             }
         );
         output = output.replace(/^Caption:\s*/, '');
